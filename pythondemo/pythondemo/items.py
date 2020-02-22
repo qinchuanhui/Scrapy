@@ -9,12 +9,13 @@ import scrapy
 
 
 class demo_item (scrapy.Item):
-    title = scrapy.Field()  # 帖子标题
-    url = scrapy.Field()  # 帖子网址
-    content = scrapy.Field()  # 帖子内容
-    post_date = scrapy.Field()  # 发帖日期
-    reply_count = scrapy.Field()  # 回复数
-
+    name = scrapy.Field()  # 书名
+    url = scrapy.Field()  # 详细网址
+    price = scrapy.Field()  # 价格
+    bookshop = scrapy.Field()  # 店名
+    comment_count = scrapy.Field()  # 评价数
+    img=scrapy.Field() #图片信息
+    isbn=scrapy.Field()#图书刊号
     # define the fields for your item here like:
     # name = scrapy.Field()
     pass

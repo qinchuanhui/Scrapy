@@ -16,10 +16,10 @@ NEWSPIDER_MODULE = 'pythondemo.spiders'
 LOG_LEVEL="WARNING"
 
 # Crawl responsibly by identifying yourself (and your website) on the user-agent
-#USER_AGENT = 'pythondemo (+http://www.yourdomain.com)'
+USER_AGENT = 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.102 Safari/537.36'
 
 # Obey robots.txt rules
-ROBOTSTXT_OBEY = True
+ROBOTSTXT_OBEY = False
 
 # Configure maximum concurrent requests performed by Scrapy (default: 16)
 #CONCURRENT_REQUESTS = 32
@@ -66,7 +66,6 @@ ROBOTSTXT_OBEY = True
 # See http://scrapy.readthedocs.org/en/latest/topics/item-pipeline.html
 ITEM_PIPELINES = {
     'pythondemo.pipelines.PythondemoPipeline': 300,
-    'pythondemo.pipelines.PythondemoPipeline1':301,
 }
 
 # Enable and configure the AutoThrottle extension (disabled by default)
